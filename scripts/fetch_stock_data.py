@@ -26,7 +26,7 @@ TOP_N = 10
 OUTPUT_FILE = Path('public/data/stocks.json')
 
 # Tushare token from env (set in GitHub Actions secrets)
-TUSHARE_TOKEN = os.environ.get('TUSHARE_TOKEN', '720efe6597d2554094bf0bcba54136798ac427ce44be8ef44e18a276')
+TUSHARE_TOKEN = os.environ.get('TUSHARE_TOKEN', '9bfdcb66a5e11f5161a867270b4499a77966ea65c4bd0033a5da9f3b')
 HK_NAMES = {
     '00700': '腾讯控股', '09988': '阿里巴巴', '00941': '中国移动',
     '00939': '建设银行', '01398': '工商银行', '01698': '宁波银行',
