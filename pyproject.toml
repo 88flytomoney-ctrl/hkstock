@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hkstock"
+version = "0.1.0"
+description = "HK Stock Market Dashboard - ETNet Top 10 with AI Analysis"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["requests>=2.31", "pandas>=2.1", "tushare>=1.4"]
+
+[project.optional-dependencies]
+dev = ["pytest", "black", "ruff"]

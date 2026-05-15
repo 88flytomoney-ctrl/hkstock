@@ -1,0 +1,48 @@
+{
+  "generatedAt": "2025-01-01 00:00:00",
+  "generatedDate": "2025-01-01",
+  "stockCount": 2,
+  "aiSummary": "示範模式：請在 GitHub Actions 中設定 TUSHARE_TOKEN 以獲取真實數據。",
+  "stocks": [
+    {
+      "code": "00700", "symbol": "00700.HK", "name": "騰訊控股",
+      "fiveDayPct": 2.34,
+      "high5": 385.0, "low5": 370.0,
+      "avgVolume": 25000000,
+      "volTrend": "↑",
+      "prices": [
+        {"date": "2024-12-26", "dateShort": "12/26", "close": 370.0, "open": 368.0, "high": 372.0, "low": 366.0, "volume": 22000000, "volumeM": 22.0},
+        {"date": "2024-12-27", "dateShort": "12/27", "close": 373.0, "open": 370.0, "high": 375.0, "low": 369.0, "volume": 24000000, "volumeM": 24.0},
+        {"date": "2024-12-30", "dateShort": "12/30", "close": 378.0, "open": 373.0, "high": 380.0, "low": 372.0, "volume": 28000000, "volumeM": 28.0},
+        {"date": "2024-12-31", "dateShort": "12/31", "close": 380.0, "open": 378.0, "high": 382.0, "low": 376.0, "volume": 26000000, "volumeM": 26.0},
+        {"date": "2025-01-02", "dateShort": "01/02", "close": 378.6, "open": 380.0, "high": 385.0, "low": 377.0, "volume": 25000000, "volumeM": 25.0}
+      ],
+      "analysis": {
+        "signal": "buy", "trend": "uptrend", "volumeSignal": "stable",
+        "support": 370.0, "resistance": 385.0,
+        "summary": "騰訊控股（00700）五日走勢上升，累積變動+2.34%。成交量穩定。技術信號：買入。",
+        "generatedAt": "2025-01-01 00:00"
+      }
+    },
+    {
+      "code": "09988", "symbol": "09988.HK", "name": "阿里巴巴",
+      "fiveDayPct": -1.20,
+      "high5": 84.0, "low5": 80.0,
+      "avgVolume": 35000000,
+      "volTrend": "↓",
+      "prices": [
+        {"date": "2024-12-26", "dateShort": "12/26", "close": 83.0, "open": 82.5, "high": 84.0, "low": 81.5, "volume": 38000000, "volumeM": 38.0},
+        {"date": "2024-12-27", "dateShort": "12/27", "close": 82.5, "open": 83.0, "high": 83.5, "low": 81.0, "volume": 34000000, "volumeM": 34.0},
+        {"date": "2024-12-30", "dateShort": "12/30", "close": 81.8, "open": 82.5, "high": 83.0, "low": 80.5, "volume": 36000000, "volumeM": 36.0},
+        {"date": "2024-12-31", "dateShort": "12/31", "close": 82.0, "open": 81.8, "high": 83.5, "low": 80.0, "volume": 32000000, "volumeM": 32.0},
+        {"date": "2025-01-02", "dateShort": "01/02", "close": 82.0, "open": 82.0, "high": 83.0, "low": 81.0, "volume": 31000000, "volumeM": 31.0}
+      ],
+      "analysis": {
+        "signal": "hold", "trend": "sideways", "volumeSignal": "volume decline",
+        "support": 80.0, "resistance": 84.0,
+        "summary": "阿里巴巴（09988）五日走勢震盪，累積變動-1.20%。成交量萎縮。技術信號：持有。",
+        "generatedAt": "2025-01-01 00:00"
+      }
+    }
+  ]
+}
