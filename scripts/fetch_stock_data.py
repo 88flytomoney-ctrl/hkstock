@@ -26,6 +26,7 @@ DAYS_BACK = 10
 LIMIT = 10
 TOP_N = 10
 OUTPUT_FILE = Path('public/data/stocks.json')
+HISTORY_DIR = Path('public/data/history')
 TUSHARE_TOKEN = os.environ.get('TUSHARE_TOKEN', '9bfdcb66a5e11f5161a867270b4499a77966ea65c4bd0033a5da9f3b')
 
 
@@ -240,7 +241,27 @@ def main():
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
 
+    # 5b. Save to history (timestamped snapshot)
+    HISTORY_DIR.mkdir(parents=True, exist_ok=True)
+    date_str = datetime.now().strftime('%Y-%m-%d')
+    history_file = HISTORY_DIR / f'{date_str}.json'
+    with open(history_file, 'w', encoding='utf-8') as f:
+        json.dump(output, f, ensure_ascii=False, indent=2)
+
+    # 5c. Update history manifest
+    manifest_file = HISTORY_DIR / 'manifest.json'
+    existing_dates = []
+    if manifest_file.exists():
+        with open(manifest_file, 'r', encoding='utf-8') as f:
+            existing_dates = json.load(f)
+    if date_str not in existing_dates:
+        existing_dates.append(date_str)
+        existing_dates.sort(reverse=True)
+    with open(manifest_file, 'w', encoding='utf-8') as f:
+        json.dump(existing_dates, f, ensure_ascii=False)
+
     print(f'✅ Done! Written to {OUTPUT_FILE}')
+    print(f'   History: {history_file}')
     print(f'   Stocks: {len(stocks)}')
     print(f'   Summary: {ai_summary[:80]}...')
 

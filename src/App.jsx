@@ -3,12 +3,16 @@ import StockCard from './components/StockCard.jsx';
 import AIAnalysis from './components/AIAnalysis.jsx';
 
 const DATA_URL = '/hkstock/data/stocks.json';
+const MANIFEST_URL = '/hkstock/data/history/manifest.json';
 
 function App() {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [loadingHistory, setLoadingHistory] = useState(false);
   const [error, setError] = useState(null);
   const [lastUpdated, setLastUpdated] = useState('');
+  const [historyDates, setHistoryDates] = useState([]);
+  const [selectedDate, setSelectedDate] = useState('');
 
   useEffect(() => {
     fetch(DATA_URL)
@@ -26,7 +30,31 @@ function App() {
         setError(e.message);
         setLoading(false);
       });
+
+    // Load history dates for selector
+    fetch(MANIFEST_URL)
+      .then(r => r.ok ? r.json() : [])
+      .then(dates => setHistoryDates(dates))
+      .catch(() => setHistoryDates([]));
   }, []);
+
+  // Load selected history date
+  useEffect(() => {
+    if (!selectedDate) {
+      // Reload latest data
+      fetch(DATA_URL)
+        .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+        .then(d => { setData(d); setLastUpdated(d.generatedAt || d.generatedDate || ''); setError(null); setLoadingHistory(false); })
+        .catch(e => { setError(e.message); setLoadingHistory(false); });
+      return;
+    }
+    setLoadingHistory(true);
+    const url = `/hkstock/data/history/${selectedDate}.json`;
+    fetch(url)
+      .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+      .then(d => { setData(d); setLastUpdated(d.generatedAt || d.generatedDate || ''); setError(null); setLoadingHistory(false); })
+      .catch(e => { setError(e.message); setLoadingHistory(false); });
+  }, [selectedDate]);
 
   if (loading) return (
     <div className="min-h-screen flex items-center justify-center">
@@ -72,7 +100,20 @@ function App() {
           <div className="text-right">
             <p className="text-xs text-slate-400">最後更新</p>
             <p className="text-sm font-medium text-slate-200">{lastUpdated}</p>
+            {loadingHistory && <p className="text-xs text-blue-400 mt-1">載入歷史...</p>}
           </div>
+          {historyDates.length > 0 && (
+            <select
+              value={selectedDate}
+              onChange={e => setSelectedDate(e.target.value)}
+              className="ml-4 px-2 py-1 bg-slate-700 border border-slate-600 rounded text-sm text-slate-200 cursor-pointer"
+            >
+              <option value="">最新數據</option>
+              {historyDates.map(d => (
+                <option key={d} value={d}>{d}</option>
+              ))}
+            </select>
+          )}
         </div>
       </header>
 
