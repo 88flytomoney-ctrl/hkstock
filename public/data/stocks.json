@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-05-16 02:32:40",
+  "generatedAt": "2026-05-16 03:12:04",
   "generatedDate": "2026-05-16",
   "stockCount": 6,
   "stocks": [
     {
       "code": "00700",
       "symbol": "00700.HK",
-      "name": "腾讯控股",
+      "name": "00700.HK",
       "prices": [
         {
           "date": "2026-05-11",
@@ -66,18 +66,18 @@
       "volTrend": "↓",
       "analysis": {
         "signal": "watch",
-        "summary": "腾讯控股（00700）五日走勢震盪，累積變動-1.72%。成交量穩定。技術信號：觀望。",
+        "summary": "00700.HK（00700）五日走勢震盪，累積變動-1.72%。成交量穩定。技術信號：觀望。",
         "trend": "sideways",
         "volumeSignal": "stable",
         "support": 463.08,
         "resistance": 470.01,
-        "generatedAt": "2026-05-16 02:32"
+        "generatedAt": "2026-05-16 03:12"
       }
     },
     {
       "code": "09988",
       "symbol": "09988.HK",
-      "name": "阿里巴巴",
+      "name": "09988.HK",
       "prices": [
         {
           "date": "2026-05-11",
@@ -137,12 +137,12 @@
       "volTrend": "↓",
       "analysis": {
         "signal": "watch",
-        "summary": "阿里巴巴（09988）五日走勢震盪，累積變動-1.19%。成交量放大。技術信號：觀望。",
+        "summary": "09988.HK（09988）五日走勢震盪，累積變動-1.19%。成交量放大。技術信號：觀望。",
         "trend": "sideways",
         "volumeSignal": "volume surge",
         "support": 132.91,
         "resistance": 141.12,
-        "generatedAt": "2026-05-16 02:32"
+        "generatedAt": "2026-05-16 03:12"
       }
     },
     {
@@ -213,7 +213,7 @@
         "volumeSignal": "stable",
         "support": 72.17,
         "resistance": 76.44,
-        "generatedAt": "2026-05-16 02:32"
+        "generatedAt": "2026-05-16 03:12"
       }
     },
     {
@@ -284,7 +284,7 @@
         "volumeSignal": "stable",
         "support": 116.89,
         "resistance": 140.63,
-        "generatedAt": "2026-05-16 02:32"
+        "generatedAt": "2026-05-16 03:12"
       }
     },
     {
@@ -355,13 +355,13 @@
         "volumeSignal": "stable",
         "support": 224.4,
         "resistance": 277.34,
-        "generatedAt": "2026-05-16 02:32"
+        "generatedAt": "2026-05-16 03:12"
       }
     },
     {
       "code": "01810",
       "symbol": "01810.HK",
-      "name": "小米集团",
+      "name": "01810.HK",
       "prices": [
         {
           "date": "2026-05-11",
@@ -421,14 +421,14 @@
       "volTrend": "↑",
       "analysis": {
         "signal": "sell",
-        "summary": "小米集团（01810）五日走勢震盪，累積變動-3.15%。成交量放大。技術信號：賣出。",
+        "summary": "01810.HK（01810）五日走勢震盪，累積變動-3.15%。成交量放大。技術信號：賣出。",
         "trend": "sideways",
         "volumeSignal": "volume surge",
         "support": 31.07,
         "resistance": 32.22,
-        "generatedAt": "2026-05-16 02:32"
+        "generatedAt": "2026-05-16 03:12"
       }
     }
   ],
-  "aiSummary": "今日追蹤 6 檔熱門港股，五日整體平均下跌6.79%。表現最佳：阿里巴巴（09988）-1.19%，表現最弱：06869.HK（06869）-14.03%。上漲 0 檔，下跌 6 檔。"
+  "aiSummary": "今日追蹤 6 檔熱門港股，五日整體平均下跌6.79%。表現最佳：09988.HK（09988）-1.19%，表現最弱：06869.HK（06869）-14.03%。上漲 0 檔，下跌 6 檔。"
 }
