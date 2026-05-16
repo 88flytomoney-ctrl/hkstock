@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-05-16 03:13:17",
+  "generatedAt": "2026-05-16 03:23:54",
   "generatedDate": "2026-05-16",
   "stockCount": 6,
   "stocks": [
     {
       "code": "00700",
       "symbol": "00700.HK",
-      "name": "00700.HK",
+      "name": "騰訊控股",
       "prices": [
         {
           "date": "2026-05-11",
@@ -66,18 +66,18 @@
       "volTrend": "↓",
       "analysis": {
         "signal": "watch",
-        "summary": "00700.HK（00700）五日走勢震盪，累積變動-1.72%。成交量穩定。技術信號：觀望。",
+        "summary": "騰訊控股（00700）五日走勢震盪，累積變動-1.72%。成交量穩定。技術信號：觀望。",
         "trend": "sideways",
         "volumeSignal": "stable",
         "support": 463.08,
         "resistance": 470.01,
-        "generatedAt": "2026-05-16 03:13"
+        "generatedAt": "2026-05-16 03:23"
       }
     },
     {
       "code": "09988",
       "symbol": "09988.HK",
-      "name": "09988.HK",
+      "name": "阿里巴巴－Ｗ",
       "prices": [
         {
           "date": "2026-05-11",
@@ -137,18 +137,18 @@
       "volTrend": "↓",
       "analysis": {
         "signal": "watch",
-        "summary": "09988.HK（09988）五日走勢震盪，累積變動-1.19%。成交量放大。技術信號：觀望。",
+        "summary": "阿里巴巴－Ｗ（09988）五日走勢震盪，累積變動-1.19%。成交量放大。技術信號：觀望。",
         "trend": "sideways",
         "volumeSignal": "volume surge",
         "support": 132.91,
         "resistance": 141.12,
-        "generatedAt": "2026-05-16 03:13"
+        "generatedAt": "2026-05-16 03:23"
       }
     },
     {
       "code": "00981",
       "symbol": "00981.HK",
-      "name": "00981.HK",
+      "name": "中芯國際",
       "prices": [
         {
           "date": "2026-05-11",
@@ -208,18 +208,18 @@
       "volTrend": "↑",
       "analysis": {
         "signal": "sell",
-        "summary": "00981.HK（00981）五日走勢下跌，累積變動-7.11%。成交量穩定。技術信號：賣出。",
+        "summary": "中芯國際（00981）五日走勢下跌，累積變動-7.11%。成交量穩定。技術信號：賣出。",
         "trend": "downtrend",
         "volumeSignal": "stable",
         "support": 72.17,
         "resistance": 76.44,
-        "generatedAt": "2026-05-16 03:13"
+        "generatedAt": "2026-05-16 03:23"
       }
     },
     {
       "code": "01347",
       "symbol": "01347.HK",
-      "name": "01347.HK",
+      "name": "華虹半導體",
       "prices": [
         {
           "date": "2026-05-11",
@@ -279,18 +279,18 @@
       "volTrend": "↑",
       "analysis": {
         "signal": "sell",
-        "summary": "01347.HK（01347）五日走勢下跌，累積變動-13.51%。成交量穩定。技術信號：賣出。",
+        "summary": "華虹半導體（01347）五日走勢下跌，累積變動-13.51%。成交量穩定。技術信號：賣出。",
         "trend": "downtrend",
         "volumeSignal": "stable",
         "support": 116.89,
         "resistance": 140.63,
-        "generatedAt": "2026-05-16 03:13"
+        "generatedAt": "2026-05-16 03:23"
       }
     },
     {
       "code": "06869",
       "symbol": "06869.HK",
-      "name": "06869.HK",
+      "name": "長飛光纖光纜",
       "prices": [
         {
           "date": "2026-05-11",
@@ -350,18 +350,18 @@
       "volTrend": "↑",
       "analysis": {
         "signal": "sell",
-        "summary": "06869.HK（06869）五日走勢下跌，累積變動-14.03%。成交量穩定。技術信號：賣出。",
+        "summary": "長飛光纖光纜（06869）五日走勢下跌，累積變動-14.03%。成交量穩定。技術信號：賣出。",
         "trend": "downtrend",
         "volumeSignal": "stable",
         "support": 224.4,
         "resistance": 277.34,
-        "generatedAt": "2026-05-16 03:13"
+        "generatedAt": "2026-05-16 03:23"
       }
     },
     {
       "code": "01810",
       "symbol": "01810.HK",
-      "name": "01810.HK",
+      "name": "小米集團－Ｗ",
       "prices": [
         {
           "date": "2026-05-11",
@@ -421,14 +421,14 @@
       "volTrend": "↑",
       "analysis": {
         "signal": "sell",
-        "summary": "01810.HK（01810）五日走勢震盪，累積變動-3.15%。成交量放大。技術信號：賣出。",
+        "summary": "小米集團－Ｗ（01810）五日走勢震盪，累積變動-3.15%。成交量放大。技術信號：賣出。",
         "trend": "sideways",
         "volumeSignal": "volume surge",
         "support": 31.07,
         "resistance": 32.22,
-        "generatedAt": "2026-05-16 03:13"
+        "generatedAt": "2026-05-16 03:23"
       }
     }
   ],
-  "aiSummary": "今日追蹤 6 檔熱門港股，五日整體平均下跌6.79%。表現最佳：09988.HK（09988）-1.19%，表現最弱：06869.HK（06869）-14.03%。上漲 0 檔，下跌 6 檔。"
+  "aiSummary": "今日追蹤 6 檔熱門港股，五日整體平均下跌6.79%。表現最佳：阿里巴巴－Ｗ（09988）-1.19%，表現最弱：長飛光纖光纜（06869）-14.03%。上漲 0 檔，下跌 6 檔。"
 }
