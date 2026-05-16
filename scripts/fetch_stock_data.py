@@ -128,9 +128,9 @@ def fetch_tushare_prices(codes, name_mapping):
                     'volumeM': round(int(row['vol']) / 1e6, 2),
                 })
 
-            # Calculate metrics
-            first_close = rows[0]['close']
-            last_close = rows[-1]['close']
+            # Calculate metrics (rows[0]=newest, rows[-1]=oldest)
+            first_close = rows[-1]['close']
+            last_close = rows[0]['close']
             five_day_pct = round((last_close / first_close - 1) * 100, 2)
             high_5 = max(r['high'] for r in rows)
             low_5 = min(r['low'] for r in rows)
@@ -188,8 +188,9 @@ def get_mock_data(codes, name_mapping):
             })
             base = close
 
-        first_close = rows[0]['close']
-        last_close = rows[-1]['close']
+        # Mock prices: newest first (rows[0]=newest, rows[-1]=oldest)
+        first_close = rows[-1]['close']
+        last_close = rows[0]['close']
         five_day_pct = round((last_close / first_close - 1) * 100, 2)
         results.append({
             'code': code, 'symbol': symbol, 'name': name,
