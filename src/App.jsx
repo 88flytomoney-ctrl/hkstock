@@ -102,18 +102,17 @@ function App() {
             <p className="text-sm font-medium text-slate-200">{lastUpdated}</p>
             {loadingHistory && <p className="text-xs text-blue-400 mt-1">載入歷史...</p>}
           </div>
-          {historyDates.length > 0 && (
-            <select
+          <select
               value={selectedDate}
               onChange={e => setSelectedDate(e.target.value)}
               className="ml-4 px-2 py-1 bg-slate-700 border border-slate-600 rounded text-sm text-slate-200 cursor-pointer"
             >
               <option value="">最新數據</option>
+              {historyDates.length === 0 && <option value="" disabled>— 尚無歷史記錄 —</option>}
               {historyDates.map(d => (
                 <option key={d} value={d}>{d}</option>
               ))}
             </select>
-          )}
         </div>
       </header>
 
