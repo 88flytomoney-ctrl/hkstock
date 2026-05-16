@@ -41,7 +41,8 @@ def build_name_mapping():
         df.columns = df.columns.str.strip()
         # Column names: 股份代號, 股份名稱
         df = df[['股份代號', '股份名稱']].dropna()
-        df['股份代號'] = df['股份代號'].astype(str).str.strip()
+        # HKEX codes are integers — zero-pad to 5 digits for consistent lookup
+        df['股份代號'] = df['股份代號'].astype(int).astype(str).str.zfill(5)
         df['股份名稱'] = df['股份名稱'].astype(str).str.strip()
         mapping = dict(zip(df['股份代號'], df['股份名稱']))
         print(f'  → Loaded {len(mapping)} Chinese stock names from HKEX')
