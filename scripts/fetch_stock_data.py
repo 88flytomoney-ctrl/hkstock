@@ -11,6 +11,7 @@ import os
 import re
 import json
 import time
+import io
 import requests
 import pandas as pd
 import tushare as ts
@@ -20,25 +21,34 @@ from stock_analysis import analyze_stock
 
 # ── Config ──────────────────────────────────────────────────────────────────
 ETNET_URL = 'https://www.etnet.com.hk/mobile/tc/stocks/top50.php?subtype=turnover'
+HKEX_XLSX_URL = 'https://www.hkex.com.hk/chi/services/trading/securities/securitieslists/ListOfSecurities_c.xlsx'
 DAYS_BACK = 10
 LIMIT = 10
 TOP_N = 10
 OUTPUT_FILE = Path('public/data/stocks.json')
-
-# Tushare token from env (set in GitHub Actions secrets)
 TUSHARE_TOKEN = os.environ.get('TUSHARE_TOKEN', '9bfdcb66a5e11f5161a867270b4499a77966ea65c4bd0033a5da9f3b')
-HK_NAMES = {
-    '00700': '腾讯控股', '09988': '阿里巴巴', '00941': '中国移动',
-    '00939': '建设银行', '01398': '工商银行', '01698': '宁波银行',
-    '06098': '贝壳', '02688': '新奥能源', '06888': '海底捞',
-    '01055': '中国南方航空', '00388': '香港交易所', '00688': '中国海外发展',
-    '01109': '华润置地', '01299': '友邦保险', '02768': '佳源国际',
-    '00857': '中国石油股份', '00386': '中国石油化工股份', '00908': '中国移动',
-    '01810': '小米集团', '02269': '药明生物', '02318': '中国平安',
-    '02382': '舜宇光学科技', '03690': '美团', '06160': '百济神州',
-    '06618': '京东健康', '06690': '海尔智家', '09618': '京东集团',
-    '09888': '百度集团', '10288': '金蝶国际', '02020': '安踏体育',
-}
+
+
+# ── Step 0: Build name mapping from HKEX xlsx ────────────────────────────────
+def build_name_mapping():
+    """Download HKEX securities list and extract Chinese stock names."""
+    print('📥 Downloading HKEX securities list...')
+    try:
+        resp = requests.get(HKEX_XLSX_URL, headers={'User-Agent': 'Mozilla/5.0'}, timeout=60)
+        resp.raise_for_status()
+        # Read xlsx from bytes
+        df = pd.read_excel(io.BytesIO(resp.content), engine='openpyxl', header=2)
+        df.columns = df.columns.str.strip()
+        # Column names: 股份代號, 股份名稱
+        df = df[['股份代號', '股份名稱']].dropna()
+        df['股份代號'] = df['股份代號'].astype(str).str.strip()
+        df['股份名稱'] = df['股份名稱'].astype(str).str.strip()
+        mapping = dict(zip(df['股份代號'], df['股份名稱']))
+        print(f'  → Loaded {len(mapping)} Chinese stock names from HKEX')
+        return mapping
+    except Exception as e:
+        print(f'  ⚠️  Failed to download HKEX list: {e}')
+        return {}
 
 
 # ── Step 1: Fetch ETNet Top codes ────────────────────────────────────────────
@@ -71,7 +81,7 @@ def fetch_etnet_codes():
 
 
 # ── Step 2: Fetch Tushare prices ─────────────────────────────────────────────
-def fetch_tushare_prices(codes):
+def fetch_tushare_prices(codes, name_mapping):
     if not TUSHARE_TOKEN:
         print('⚠️  TUSHARE_TOKEN not set, using mock data')
         return get_mock_data(codes)
@@ -88,7 +98,7 @@ def fetch_tushare_prices(codes):
     results = []
     for code in codes[:LIMIT]:
         symbol = f'{code}.HK'
-        name = HK_NAMES.get(code, symbol)
+        name = name_mapping.get(code, symbol)
         try:
             df = pro.hk_daily(ts_code=symbol, start_date=start_str, end_date=end_str)
             if df is None or df.empty:
@@ -146,7 +156,7 @@ def fetch_tushare_prices(codes):
 
 
 # ── Mock data (when no Tushare token) ────────────────────────────────────────
-def get_mock_data(codes):
+def get_mock_data(codes, name_mapping):
     print('📊 Using mock data...')
     results = []
     import random
@@ -157,7 +167,7 @@ def get_mock_data(codes):
     }
     for code in codes[:LIMIT]:
         symbol = f'{code}.HK'
-        name = HK_NAMES.get(code, symbol)
+        name = name_mapping.get(code, symbol)
         base = base_prices.get(code, 50)
         today = datetime.now().date()
         rows = []
@@ -200,8 +210,11 @@ def main():
         print('❌ No codes fetched, exiting')
         sys.exit(1)
 
-    # 2. Fetch prices
-    stocks = fetch_tushare_prices(codes)
+    # 2. Build name mapping from HKEX
+    name_mapping = build_name_mapping()
+
+    # 3. Fetch prices
+    stocks = fetch_tushare_prices(codes, name_mapping)
     if not stocks:
         print('❌ No stock data fetched, exiting')
         sys.exit(1)
