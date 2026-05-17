@@ -55,7 +55,7 @@ export default function StockCard({ stock }) {
         <div className="flex items-baseline justify-between border-t border-slate-700 pt-2">
           <div>
             <span className="text-2xl font-bold text-white">
-              {prices[0].close.toFixed(2)}
+              {prices[prices.length - 1].close.toFixed(2)}
             </span>
             <span className="text-sm text-slate-400 ml-1">HKD</span>
           </div>
