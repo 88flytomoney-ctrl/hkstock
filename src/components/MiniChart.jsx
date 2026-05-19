@@ -7,8 +7,8 @@ export default function MiniChart({ prices, isUp }) {
     volume: p.volumeM,
   }));
 
-  const color = isUp ? '#ef4444' : '#22c55e';
-  const colorFade = isUp ? '#7f1d1d' : '#14532d';
+  const color = isUp ? '#22c55e' : '#ef4444';
+  const colorFade = isUp ? '#14532d' : '#7f1d1d';
 
   return (
     <div className="h-20">
