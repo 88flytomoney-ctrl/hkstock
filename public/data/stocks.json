@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-19 08:43:43",
+  "generatedAt": "2026-05-19 11:11:16",
   "generatedDate": "2026-05-19",
   "stockCount": 6,
   "stocks": [
@@ -8,16 +8,6 @@
       "symbol": "00700.HK",
       "name": "騰訊控股",
       "prices": [
-        {
-          "date": "2026-05-12",
-          "dateShort": "05/12",
-          "close": 457.2,
-          "open": 462.0,
-          "high": 469.0,
-          "low": 457.2,
-          "volume": 32469707,
-          "volumeM": 32.47
-        },
         {
           "date": "2026-05-13",
           "dateShort": "05/13",
@@ -57,21 +47,31 @@
           "low": 445.8,
           "volume": 29497076,
           "volumeM": 29.5
+        },
+        {
+          "date": "2026-05-19",
+          "dateShort": "05/19",
+          "close": 460.0,
+          "open": 449.2,
+          "high": 468.8,
+          "low": 448.6,
+          "volume": 33736701,
+          "volumeM": 33.74
         }
       ],
-      "fiveDayPct": -1.75,
+      "fiveDayPct": -0.56,
       "high5": 479.6,
       "low5": 445.8,
-      "avgVolume": 30874443.6,
-      "volTrend": "↓",
+      "avgVolume": 31127842.4,
+      "volTrend": "↑",
       "analysis": {
-        "signal": "watch",
-        "summary": "騰訊控股（00700）五日走勢震盪，累積變動-1.75%。成交量穩定。技術信號：觀望。",
+        "signal": "hold",
+        "summary": "騰訊控股（00700）五日走勢震盪，累積變動-0.56%。成交量穩定。技術信號：持有。",
         "trend": "sideways",
         "volumeSignal": "stable",
         "support": 454.72,
         "resistance": 470.01,
-        "generatedAt": "2026-05-19 08:43"
+        "generatedAt": "2026-05-19 11:11"
       }
     },
     {
@@ -79,16 +79,6 @@
       "symbol": "09988.HK",
       "name": "阿里巴巴－Ｗ",
       "prices": [
-        {
-          "date": "2026-05-12",
-          "dateShort": "05/12",
-          "close": 133.3,
-          "open": 133.5,
-          "high": 136.0,
-          "low": 133.1,
-          "volume": 57483637,
-          "volumeM": 57.48
-        },
         {
           "date": "2026-05-13",
           "dateShort": "05/13",
@@ -128,21 +118,31 @@
           "low": 128.6,
           "volume": 94625028,
           "volumeM": 94.63
+        },
+        {
+          "date": "2026-05-19",
+          "dateShort": "05/19",
+          "close": 133.3,
+          "open": 130.5,
+          "high": 135.3,
+          "low": 130.5,
+          "volume": 75905647,
+          "volumeM": 75.91
         }
       ],
-      "fiveDayPct": -1.2,
+      "fiveDayPct": 0.38,
       "high5": 144.0,
       "low5": 128.6,
-      "avgVolume": 100575753.0,
+      "avgVolume": 104260155.0,
       "volTrend": "↓",
       "analysis": {
-        "signal": "watch",
-        "summary": "阿里巴巴－Ｗ（09988）五日走勢震盪，累積變動-1.20%。成交量穩定。技術信號：觀望。",
-        "trend": "sideways",
+        "signal": "hold",
+        "summary": "阿里巴巴－Ｗ（09988）五日走勢下跌，累積變動+0.38%。成交量穩定。技術信號：持有。",
+        "trend": "downtrend",
         "volumeSignal": "stable",
         "support": 131.17,
         "resistance": 141.12,
-        "generatedAt": "2026-05-19 08:43"
+        "generatedAt": "2026-05-19 11:11"
       }
     },
     {
@@ -150,16 +150,6 @@
       "symbol": "00981.HK",
       "name": "中芯國際",
       "prices": [
-        {
-          "date": "2026-05-12",
-          "dateShort": "05/12",
-          "close": 76.6,
-          "open": 77.95,
-          "high": 78.0,
-          "low": 73.4,
-          "volume": 99822983,
-          "volumeM": 99.82
-        },
         {
           "date": "2026-05-13",
           "dateShort": "05/13",
@@ -199,21 +189,31 @@
           "low": 67.6,
           "volume": 118961756,
           "volumeM": 118.96
+        },
+        {
+          "date": "2026-05-19",
+          "dateShort": "05/19",
+          "close": 68.5,
+          "open": 67.95,
+          "high": 69.4,
+          "low": 65.2,
+          "volume": 119791532,
+          "volumeM": 119.79
         }
       ],
-      "fiveDayPct": -10.31,
-      "high5": 78.0,
-      "low5": 67.6,
-      "avgVolume": 112166903.4,
+      "fiveDayPct": -7.62,
+      "high5": 76.65,
+      "low5": 65.2,
+      "avgVolume": 116160613.2,
       "volTrend": "↑",
       "analysis": {
-        "signal": "strong sell",
-        "summary": "中芯國際（00981）五日走勢下跌，累積變動-10.31%。成交量放大。技術信號：強烈賣出。",
+        "signal": "sell",
+        "summary": "中芯國際（00981）五日走勢下跌，累積變動-7.62%。成交量穩定。技術信號：賣出。",
         "trend": "downtrend",
-        "volumeSignal": "volume surge",
-        "support": 68.95,
-        "resistance": 76.44,
-        "generatedAt": "2026-05-19 08:43"
+        "volumeSignal": "stable",
+        "support": 66.5,
+        "resistance": 75.12,
+        "generatedAt": "2026-05-19 11:11"
       }
     },
     {
@@ -221,16 +221,6 @@
       "symbol": "00941.HK",
       "name": "中國移動",
       "prices": [
-        {
-          "date": "2026-05-12",
-          "dateShort": "05/12",
-          "close": 86.5,
-          "open": 86.25,
-          "high": 86.65,
-          "low": 86.25,
-          "volume": 16964814,
-          "volumeM": 16.96
-        },
         {
           "date": "2026-05-13",
           "dateShort": "05/13",
@@ -270,21 +260,31 @@
           "low": 85.85,
           "volume": 19082959,
           "volumeM": 19.08
+        },
+        {
+          "date": "2026-05-19",
+          "dateShort": "05/19",
+          "close": 86.8,
+          "open": 86.5,
+          "high": 88.05,
+          "low": 86.3,
+          "volume": 48614084,
+          "volumeM": 48.61
         }
       ],
-      "fiveDayPct": -0.12,
-      "high5": 87.15,
+      "fiveDayPct": 0.29,
+      "high5": 88.05,
       "low5": 85.85,
-      "avgVolume": 21590160.2,
-      "volTrend": "↓",
+      "avgVolume": 27920014.2,
+      "volTrend": "↑",
       "analysis": {
-        "signal": "hold",
-        "summary": "中國移動（00941）五日走勢震盪，累積變動-0.12%。成交量穩定。技術信號：持有。",
+        "signal": "buy",
+        "summary": "中國移動（00941）五日走勢震盪，累積變動+0.29%。成交量放大。技術信號：買入。",
         "trend": "sideways",
-        "volumeSignal": "stable",
+        "volumeSignal": "volume surge",
         "support": 87.57,
-        "resistance": 85.41,
-        "generatedAt": "2026-05-19 08:43"
+        "resistance": 86.29,
+        "generatedAt": "2026-05-19 11:11"
       }
     },
     {
@@ -292,16 +292,6 @@
       "symbol": "06869.HK",
       "name": "長飛光纖光纜",
       "prices": [
-        {
-          "date": "2026-05-12",
-          "dateShort": "05/12",
-          "close": 271.2,
-          "open": 274.0,
-          "high": 283.0,
-          "low": 265.4,
-          "volume": 15847460,
-          "volumeM": 15.85
-        },
         {
           "date": "2026-05-13",
           "dateShort": "05/13",
@@ -341,21 +331,31 @@
           "low": 222.0,
           "volume": 15174090,
           "volumeM": 15.17
+        },
+        {
+          "date": "2026-05-19",
+          "dateShort": "05/19",
+          "close": 234.8,
+          "open": 234.0,
+          "high": 239.0,
+          "low": 225.0,
+          "volume": 15359385,
+          "volumeM": 15.36
         }
       ],
-      "fiveDayPct": -11.28,
-      "high5": 283.0,
+      "fiveDayPct": -11.06,
+      "high5": 275.0,
       "low5": 220.0,
-      "avgVolume": 15911108.6,
+      "avgVolume": 15813493.6,
       "volTrend": "↓",
       "analysis": {
-        "signal": "strong sell",
-        "summary": "長飛光纖光纜（06869）五日走勢下跌，累積變動-11.28%。成交量放大。技術信號：強烈賣出。",
+        "signal": "sell",
+        "summary": "長飛光纖光纜（06869）五日走勢下跌，累積變動-11.06%。成交量穩定。技術信號：賣出。",
         "trend": "downtrend",
-        "volumeSignal": "volume surge",
+        "volumeSignal": "stable",
         "support": 224.4,
-        "resistance": 277.34,
-        "generatedAt": "2026-05-19 08:43"
+        "resistance": 269.5,
+        "generatedAt": "2026-05-19 11:11"
       }
     },
     {
@@ -363,16 +363,6 @@
       "symbol": "01347.HK",
       "name": "華虹半導體",
       "prices": [
-        {
-          "date": "2026-05-12",
-          "dateShort": "05/12",
-          "close": 129.5,
-          "open": 134.0,
-          "high": 134.9,
-          "low": 126.8,
-          "volume": 32564199,
-          "volumeM": 32.56
-        },
         {
           "date": "2026-05-13",
           "dateShort": "05/13",
@@ -412,23 +402,33 @@
           "low": 113.6,
           "volume": 24125049,
           "volumeM": 24.13
+        },
+        {
+          "date": "2026-05-19",
+          "dateShort": "05/19",
+          "close": 116.6,
+          "open": 115.8,
+          "high": 118.5,
+          "low": 109.0,
+          "volume": 26516981,
+          "volumeM": 26.52
         }
       ],
-      "fiveDayPct": -10.58,
-      "high5": 134.9,
-      "low5": 113.6,
-      "avgVolume": 34635727.2,
+      "fiveDayPct": -10.17,
+      "high5": 133.9,
+      "low5": 109.0,
+      "avgVolume": 33426283.6,
       "volTrend": "↓",
       "analysis": {
-        "signal": "strong sell",
-        "summary": "華虹半導體（01347）五日走勢下跌，累積變動-10.58%。成交量放大。技術信號：強烈賣出。",
+        "signal": "sell",
+        "summary": "華虹半導體（01347）五日走勢下跌，累積變動-10.17%。成交量萎縮。技術信號：賣出。",
         "trend": "downtrend",
-        "volumeSignal": "volume surge",
-        "support": 115.87,
-        "resistance": 132.2,
-        "generatedAt": "2026-05-19 08:43"
+        "volumeSignal": "volume decline",
+        "support": 111.18,
+        "resistance": 131.22,
+        "generatedAt": "2026-05-19 11:11"
       }
     }
   ],
-  "aiSummary": "今日追蹤 6 檔熱門港股，五日整體平均下跌5.87%。表現最佳：中國移動（00941）-0.12%，表現最弱：長飛光纖光纜（06869）-11.28%。上漲 0 檔，下跌 6 檔。"
+  "aiSummary": "今日追蹤 6 檔熱門港股，五日整體平均下跌4.79%。表現最佳：阿里巴巴－Ｗ（09988）+0.38%，表現最弱：長飛光纖光纜（06869）-11.06%。上漲 2 檔，下跌 4 檔。"
 }
