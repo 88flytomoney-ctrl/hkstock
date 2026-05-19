@@ -128,10 +128,10 @@ def fetch_tushare_prices(codes, name_mapping):
                     'volumeM': round(int(row['vol']) / 1e6, 2),
                 })
 
-            # Calculate metrics (rows[0]=newest, rows[-1]=oldest)
-            first_close = rows[-1]['close']
-            last_close = rows[0]['close']
-            five_day_pct = round((last_close / first_close - 1) * 100, 2)
+            # Calculate metrics (rows[0]=oldest, rows[-1]=newest)
+            oldest_close = rows[0]['close']
+            newest_close = rows[-1]['close']
+            five_day_pct = round((newest_close / oldest_close - 1) * 100, 2)
             high_5 = max(r['high'] for r in rows)
             low_5 = min(r['low'] for r in rows)
             avg_vol = sum(r['volume'] for r in rows) / len(rows)
