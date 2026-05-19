@@ -43,8 +43,7 @@ function Candlestick({ x, y, width, height, payload }) {
 }
 
 export default function MiniChart({ prices, isUp }) {
-  // Transform: reverse so oldest→newest (left to right)
-  const data = [...prices].reverse().map(p => ({
+  const data = prices.map(p => ({
     date: p.dateShort,
     open: p.open,
     high: p.high,
