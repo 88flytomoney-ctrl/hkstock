@@ -1,25 +1,82 @@
-import { LineChart, Line, ResponsiveContainer, Tooltip } from 'recharts';
+import { ComposedChart, Bar, Line, XAxis, YAxis, ResponsiveContainer, Tooltip, Cell } from 'recharts';
 
-export default function MiniChart({ prices, isUp }) {
-  const data = prices.map(p => ({
-    date: p.dateShort,
-    close: p.close,
-    volume: p.volumeM,
-  }));
-
+function Candlestick({ x, y, width, height, payload }) {
+  if (!payload) return null;
+  const { open, high, low, close } = payload;
+  const isUp = close >= open;
   const color = isUp ? '#22c55e' : '#ef4444';
-  const colorFade = isUp ? '#14532d' : '#7f1d1d';
+
+  // Body: open to close
+  const bodyTop = y + (height - (close - open) / (high - low) * height);
+  const bodyBottom = y + height;
+  const bodyHeight = Math.abs((close - open) / (high - low) * height) || 2;
+
+  // Wick extremes
+  const wickTop = y;
+  const wickBottom = y + height;
+
+  // Center x of the candle
+  const cx = x + width / 2;
 
   return (
-    <div className="h-20">
+    <g>
+      {/* High-Low wick */}
+      <line
+        x1={cx} y1={wickTop}
+        x2={cx} y2={wickBottom}
+        stroke={color}
+        strokeWidth={1}
+      />
+      {/* Open-Close body */}
+      <rect
+        x={x + 1}
+        y={bodyTop}
+        width={Math.max(width - 2, 4)}
+        height={Math.max(bodyHeight, 2)}
+        fill={isUp ? color : color}
+        stroke={color}
+        strokeWidth={1}
+        rx={1}
+      />
+    </g>
+  );
+}
+
+export default function MiniChart({ prices, isUp }) {
+  // Transform: reverse so oldest→newest (left to right)
+  const data = [...prices].reverse().map(p => ({
+    date: p.dateShort,
+    open: p.open,
+    high: p.high,
+    low: p.low,
+    close: p.close,
+    volume: p.volumeM,
+    isUp: p.close >= p.open,
+  }));
+
+  // Y-axis domain: show low-high range with padding
+  const minPrice = Math.min(...data.map(d => d.low));
+  const maxPrice = Math.max(...data.map(d => d.high));
+  const padding = (maxPrice - minPrice) * 0.1;
+
+  return (
+    <div className="h-24">
       <ResponsiveContainer width="100%" height="100%">
-        <LineChart data={data} margin={{ top: 4, right: 4, bottom: 4, left: 4 }}>
-          <defs>
-            <linearGradient id={`grad-${isUp}`} x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor={color} stopOpacity={0.3} />
-              <stop offset="100%" stopColor={color} stopOpacity={0} />
-            </linearGradient>
-          </defs>
+        <ComposedChart data={data} margin={{ top: 4, right: 4, bottom: 4, left: 4 }}>
+          <XAxis
+            dataKey="date"
+            tick={{ fill: '#64748b', fontSize: 10 }}
+            axisLine={{ stroke: '#334155' }}
+            tickLine={false}
+          />
+          <YAxis
+            domain={[minPrice - padding, maxPrice + padding]}
+            tick={{ fill: '#64748b', fontSize: 10 }}
+            axisLine={false}
+            tickLine={false}
+            width={50}
+            tickFormatter={v => v.toFixed(0)}
+          />
           <Tooltip
             contentStyle={{
               background: '#1e293b',
@@ -29,17 +86,21 @@ export default function MiniChart({ prices, isUp }) {
               color: '#e2e8f0',
             }}
             labelStyle={{ color: '#94a3b8' }}
-            formatter={(value) => [value.toFixed(2), '收盤']}
+            formatter={(value, name) => {
+              const labels = { open: '開', high: '高', low: '低', close: '收' };
+              return [`${value.toFixed(2)}`, labels[name] || name];
+            }}
           />
-          <Line
-            type="monotone"
+          <Bar
             dataKey="close"
-            stroke={color}
-            strokeWidth={2}
-            dot={{ r: 3, fill: color, strokeWidth: 0 }}
-            activeDot={{ r: 5, fill: color, strokeWidth: 0 }}
-          />
-        </LineChart>
+            shape={<Candlestick />}
+            isAnimationActive={false}
+          >
+            {data.map((entry, index) => (
+              <Cell key={index} />
+            ))}
+          </Bar>
+        </ComposedChart>
       </ResponsiveContainer>
     </div>
   );
