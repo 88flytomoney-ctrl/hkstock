@@ -23,7 +23,7 @@ from stock_analysis import analyze_stock
 ETNET_URL = 'https://www.etnet.com.hk/mobile/tc/stocks/top50.php?subtype=turnover'
 HKEX_XLSX_URL = 'https://www.hkex.com.hk/chi/services/trading/securities/securitieslists/ListOfSecurities_c.xlsx'
 DAYS_BACK = 10
-LIMIT = 10
+LIMIT = 15
 TOP_N = 10
 OUTPUT_FILE = Path('public/data/stocks.json')
 HISTORY_DIR = Path('public/data/history')
