@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-20 08:27:35",
+  "generatedAt": "2026-05-20 13:19:39",
   "generatedDate": "2026-05-20",
   "stockCount": 11,
   "stocks": [
@@ -8,16 +8,6 @@
       "symbol": "00981.HK",
       "name": "中芯國際",
       "prices": [
-        {
-          "date": "2026-05-13",
-          "dateShort": "05/13",
-          "close": 74.15,
-          "open": 74.35,
-          "high": 75.2,
-          "low": 72.1,
-          "volume": 86814246,
-          "volumeM": 86.81
-        },
         {
           "date": "2026-05-14",
           "dateShort": "05/14",
@@ -57,21 +47,31 @@
           "low": 65.2,
           "volume": 119791532,
           "volumeM": 119.79
+        },
+        {
+          "date": "2026-05-20",
+          "dateShort": "05/20",
+          "close": 75.15,
+          "open": 68.05,
+          "high": 77.45,
+          "low": 67.6,
+          "volume": 258516139,
+          "volumeM": 258.52
         }
       ],
-      "fiveDayPct": -7.62,
-      "high5": 76.65,
+      "fiveDayPct": 5.1,
+      "high5": 77.45,
       "low5": 65.2,
-      "avgVolume": 116160613.2,
+      "avgVolume": 150500991.8,
       "volTrend": "↑",
       "analysis": {
-        "signal": "sell",
-        "summary": "中芯國際（00981）五日走勢下跌，累積變動-7.62%。成交量穩定。技術信號：賣出。",
-        "trend": "downtrend",
-        "volumeSignal": "stable",
+        "signal": "buy",
+        "summary": "中芯國際（00981）五日走勢震盪，累積變動+5.10%。成交量放大。技術信號：買入。",
+        "trend": "sideways",
+        "volumeSignal": "volume surge",
         "support": 66.5,
-        "resistance": 75.12,
-        "generatedAt": "2026-05-20 08:27"
+        "resistance": 75.9,
+        "generatedAt": "2026-05-20 13:19"
       }
     },
     {
@@ -79,16 +79,6 @@
       "symbol": "00700.HK",
       "name": "騰訊控股",
       "prices": [
-        {
-          "date": "2026-05-13",
-          "dateShort": "05/13",
-          "close": 462.6,
-          "open": 456.0,
-          "high": 465.8,
-          "low": 454.0,
-          "volume": 26616535,
-          "volumeM": 26.62
-        },
         {
           "date": "2026-05-14",
           "dateShort": "05/14",
@@ -128,21 +118,31 @@
           "low": 448.6,
           "volume": 33736701,
           "volumeM": 33.74
+        },
+        {
+          "date": "2026-05-20",
+          "dateShort": "05/20",
+          "close": 455.2,
+          "open": 460.0,
+          "high": 463.4,
+          "low": 453.6,
+          "volume": 18927606,
+          "volumeM": 18.93
         }
       ],
-      "fiveDayPct": -0.56,
+      "fiveDayPct": -1.09,
       "high5": 479.6,
       "low5": 445.8,
-      "avgVolume": 31127842.4,
-      "volTrend": "↑",
+      "avgVolume": 29590056.6,
+      "volTrend": "↓",
       "analysis": {
-        "signal": "hold",
-        "summary": "騰訊控股（00700）五日走勢震盪，累積變動-0.56%。成交量穩定。技術信號：持有。",
+        "signal": "watch",
+        "summary": "騰訊控股（00700）五日走勢震盪，累積變動-1.09%。成交量穩定。技術信號：觀望。",
         "trend": "sideways",
         "volumeSignal": "stable",
         "support": 454.72,
         "resistance": 470.01,
-        "generatedAt": "2026-05-20 08:27"
+        "generatedAt": "2026-05-20 13:19"
       }
     },
     {
@@ -150,16 +150,6 @@
       "symbol": "09988.HK",
       "name": "阿里巴巴－Ｗ",
       "prices": [
-        {
-          "date": "2026-05-13",
-          "dateShort": "05/13",
-          "close": 132.8,
-          "open": 132.0,
-          "high": 134.2,
-          "low": 130.3,
-          "volume": 89332520,
-          "volumeM": 89.33
-        },
         {
           "date": "2026-05-14",
           "dateShort": "05/14",
@@ -199,21 +189,31 @@
           "low": 130.5,
           "volume": 75905647,
           "volumeM": 75.91
+        },
+        {
+          "date": "2026-05-20",
+          "dateShort": "05/20",
+          "close": 131.9,
+          "open": 132.9,
+          "high": 135.5,
+          "low": 131.0,
+          "volume": 64904996,
+          "volumeM": 64.9
         }
       ],
-      "fiveDayPct": 0.38,
+      "fiveDayPct": -4.35,
       "high5": 144.0,
       "low5": 128.6,
-      "avgVolume": 104260155.0,
+      "avgVolume": 99374650.2,
       "volTrend": "↓",
       "analysis": {
-        "signal": "hold",
-        "summary": "阿里巴巴－Ｗ（09988）五日走勢下跌，累積變動+0.38%。成交量穩定。技術信號：持有。",
+        "signal": "sell",
+        "summary": "阿里巴巴－Ｗ（09988）五日走勢下跌，累積變動-4.35%。成交量萎縮。技術信號：賣出。",
         "trend": "downtrend",
-        "volumeSignal": "stable",
+        "volumeSignal": "volume decline",
         "support": 131.17,
         "resistance": 141.12,
-        "generatedAt": "2026-05-20 08:27"
+        "generatedAt": "2026-05-20 13:19"
       }
     },
     {
@@ -221,16 +221,6 @@
       "symbol": "01347.HK",
       "name": "華虹半導體",
       "prices": [
-        {
-          "date": "2026-05-13",
-          "dateShort": "05/13",
-          "close": 129.8,
-          "open": 126.6,
-          "high": 131.1,
-          "low": 121.1,
-          "volume": 29567657,
-          "volumeM": 29.57
-        },
         {
           "date": "2026-05-14",
           "dateShort": "05/14",
@@ -270,21 +260,31 @@
           "low": 109.0,
           "volume": 26516981,
           "volumeM": 26.52
+        },
+        {
+          "date": "2026-05-20",
+          "dateShort": "05/20",
+          "close": 132.8,
+          "open": 115.0,
+          "high": 134.9,
+          "low": 114.9,
+          "volume": 58507267,
+          "volumeM": 58.51
         }
       ],
-      "fiveDayPct": -10.17,
-      "high5": 133.9,
+      "fiveDayPct": 4.57,
+      "high5": 134.9,
       "low5": 109.0,
-      "avgVolume": 33426283.6,
-      "volTrend": "↓",
+      "avgVolume": 39214205.6,
+      "volTrend": "↑",
       "analysis": {
-        "signal": "sell",
-        "summary": "華虹半導體（01347）五日走勢下跌，累積變動-10.17%。成交量萎縮。技術信號：賣出。",
-        "trend": "downtrend",
-        "volumeSignal": "volume decline",
+        "signal": "hold",
+        "summary": "華虹半導體（01347）五日走勢震盪，累積變動+4.57%。成交量穩定。技術信號：持有。",
+        "trend": "sideways",
+        "volumeSignal": "stable",
         "support": 111.18,
-        "resistance": 131.22,
-        "generatedAt": "2026-05-20 08:27"
+        "resistance": 132.2,
+        "generatedAt": "2026-05-20 13:19"
       }
     },
     {
@@ -292,16 +292,6 @@
       "symbol": "01810.HK",
       "name": "小米集團－Ｗ",
       "prices": [
-        {
-          "date": "2026-05-13",
-          "dateShort": "05/13",
-          "close": 31.8,
-          "open": 31.52,
-          "high": 32.08,
-          "low": 31.12,
-          "volume": 102172260,
-          "volumeM": 102.17
-        },
         {
           "date": "2026-05-14",
           "dateShort": "05/14",
@@ -341,21 +331,31 @@
           "low": 30.34,
           "volume": 89701522,
           "volumeM": 89.7
+        },
+        {
+          "date": "2026-05-20",
+          "dateShort": "05/20",
+          "close": 30.14,
+          "open": 30.54,
+          "high": 30.54,
+          "low": 29.86,
+          "volume": 109868643,
+          "volumeM": 109.87
         }
       ],
-      "fiveDayPct": -3.65,
+      "fiveDayPct": -4.98,
       "high5": 32.88,
-      "low5": 30.14,
-      "avgVolume": 124397721.6,
+      "low5": 29.86,
+      "avgVolume": 125936998.2,
       "volTrend": "↓",
       "analysis": {
         "signal": "sell",
-        "summary": "小米集團－Ｗ（01810）五日走勢下跌，累積變動-3.65%。成交量穩定。技術信號：賣出。",
+        "summary": "小米集團－Ｗ（01810）五日走勢下跌，累積變動-4.98%。成交量萎縮。技術信號：賣出。",
         "trend": "downtrend",
-        "volumeSignal": "stable",
-        "support": 30.74,
+        "volumeSignal": "volume decline",
+        "support": 30.46,
         "resistance": 32.22,
-        "generatedAt": "2026-05-20 08:27"
+        "generatedAt": "2026-05-20 13:19"
       }
     },
     {
@@ -363,16 +363,6 @@
       "symbol": "02899.HK",
       "name": "紫金礦業",
       "prices": [
-        {
-          "date": "2026-05-13",
-          "dateShort": "05/13",
-          "close": 38.82,
-          "open": 39.2,
-          "high": 39.66,
-          "low": 38.3,
-          "volume": 64125848,
-          "volumeM": 64.13
-        },
         {
           "date": "2026-05-14",
           "dateShort": "05/14",
@@ -412,21 +402,31 @@
           "low": 33.1,
           "volume": 67620905,
           "volumeM": 67.62
+        },
+        {
+          "date": "2026-05-20",
+          "dateShort": "05/20",
+          "close": 32.72,
+          "open": 32.9,
+          "high": 33.0,
+          "low": 32.04,
+          "volume": 97482800,
+          "volumeM": 97.48
         }
       ],
-      "fiveDayPct": -13.96,
-      "high5": 39.66,
-      "low5": 33.1,
-      "avgVolume": 66821499.0,
+      "fiveDayPct": -12.09,
+      "high5": 39.3,
+      "low5": 32.04,
+      "avgVolume": 73492889.4,
       "volTrend": "↑",
       "analysis": {
         "signal": "sell",
-        "summary": "紫金礦業（02899）五日走勢下跌，累積變動-13.96%。成交量穩定。技術信號：賣出。",
+        "summary": "紫金礦業（02899）五日走勢下跌，累積變動-12.09%。成交量穩定。技術信號：賣出。",
         "trend": "downtrend",
         "volumeSignal": "stable",
-        "support": 33.76,
-        "resistance": 38.87,
-        "generatedAt": "2026-05-20 08:27"
+        "support": 32.68,
+        "resistance": 38.51,
+        "generatedAt": "2026-05-20 13:19"
       }
     },
     {
@@ -434,16 +434,6 @@
       "symbol": "01211.HK",
       "name": "比亞迪股份",
       "prices": [
-        {
-          "date": "2026-05-13",
-          "dateShort": "05/13",
-          "close": 98.15,
-          "open": 99.6,
-          "high": 99.8,
-          "low": 96.25,
-          "volume": 26642728,
-          "volumeM": 26.64
-        },
         {
           "date": "2026-05-14",
           "dateShort": "05/14",
@@ -483,21 +473,31 @@
           "low": 92.45,
           "volume": 18431312,
           "volumeM": 18.43
+        },
+        {
+          "date": "2026-05-20",
+          "dateShort": "05/20",
+          "close": 90.2,
+          "open": 93.0,
+          "high": 93.0,
+          "low": 90.1,
+          "volume": 34280540,
+          "volumeM": 34.28
         }
       ],
-      "fiveDayPct": -4.33,
+      "fiveDayPct": -8.1,
       "high5": 100.9,
-      "low5": 92.45,
-      "avgVolume": 23480590.8,
-      "volTrend": "↓",
+      "low5": 90.1,
+      "avgVolume": 25008153.2,
+      "volTrend": "↑",
       "analysis": {
         "signal": "sell",
-        "summary": "比亞迪股份（01211）五日走勢下跌，累積變動-4.33%。成交量穩定。技術信號：賣出。",
+        "summary": "比亞迪股份（01211）五日走勢下跌，累積變動-8.10%。成交量穩定。技術信號：賣出。",
         "trend": "downtrend",
         "volumeSignal": "stable",
-        "support": 94.3,
+        "support": 91.9,
         "resistance": 98.88,
-        "generatedAt": "2026-05-20 08:27"
+        "generatedAt": "2026-05-20 13:19"
       }
     },
     {
@@ -505,16 +505,6 @@
       "symbol": "00883.HK",
       "name": "中國海洋石油",
       "prices": [
-        {
-          "date": "2026-05-13",
-          "dateShort": "05/13",
-          "close": 26.62,
-          "open": 27.02,
-          "high": 27.22,
-          "low": 26.34,
-          "volume": 72558965,
-          "volumeM": 72.56
-        },
         {
           "date": "2026-05-14",
           "dateShort": "05/14",
@@ -554,21 +544,31 @@
           "low": 26.62,
           "volume": 108035077,
           "volumeM": 108.04
+        },
+        {
+          "date": "2026-05-20",
+          "dateShort": "05/20",
+          "close": 27.8,
+          "open": 27.6,
+          "high": 28.28,
+          "low": 27.42,
+          "volume": 108804530,
+          "volumeM": 108.8
         }
       ],
-      "fiveDayPct": 3.53,
-      "high5": 27.56,
+      "fiveDayPct": 5.46,
+      "high5": 28.28,
       "low5": 26.14,
-      "avgVolume": 82042674.2,
+      "avgVolume": 89291787.2,
       "volTrend": "↑",
       "analysis": {
-        "signal": "buy",
-        "summary": "中國海洋石油（00883）五日走勢震盪，累積變動+3.53%。成交量放大。技術信號：買入。",
-        "trend": "sideways",
+        "signal": "strong buy",
+        "summary": "中國海洋石油（00883）五日走勢上升，累積變動+5.46%。成交量放大。技術信號：強烈買入。",
+        "trend": "uptrend",
         "volumeSignal": "volume surge",
         "support": 26.66,
-        "resistance": 27.01,
-        "generatedAt": "2026-05-20 08:27"
+        "resistance": 27.71,
+        "generatedAt": "2026-05-20 13:19"
       }
     },
     {
@@ -576,16 +576,6 @@
       "symbol": "06809.HK",
       "name": "瀾起科技",
       "prices": [
-        {
-          "date": "2026-05-13",
-          "dateShort": "05/13",
-          "close": 501.0,
-          "open": 407.0,
-          "high": 524.5,
-          "low": 400.0,
-          "volume": 5947867,
-          "volumeM": 5.95
-        },
         {
           "date": "2026-05-14",
           "dateShort": "05/14",
@@ -625,21 +615,31 @@
           "low": 403.6,
           "volume": 5025222,
           "volumeM": 5.03
+        },
+        {
+          "date": "2026-05-20",
+          "dateShort": "05/20",
+          "close": 446.8,
+          "open": 430.0,
+          "high": 458.2,
+          "low": 425.0,
+          "volume": 6360070,
+          "volumeM": 6.36
         }
       ],
-      "fiveDayPct": -15.45,
+      "fiveDayPct": -7.38,
       "high5": 543.0,
-      "low5": 400.0,
-      "avgVolume": 5905438.2,
-      "volTrend": "↓",
+      "low5": 403.6,
+      "avgVolume": 5987878.8,
+      "volTrend": "↑",
       "analysis": {
         "signal": "sell",
-        "summary": "瀾起科技（06809）五日走勢下跌，累積變動-15.45%。成交量穩定。技術信號：賣出。",
+        "summary": "瀾起科技（06809）五日走勢下跌，累積變動-7.38%。成交量穩定。技術信號：賣出。",
         "trend": "downtrend",
         "volumeSignal": "stable",
-        "support": 408.0,
+        "support": 411.67,
         "resistance": 532.14,
-        "generatedAt": "2026-05-20 08:27"
+        "generatedAt": "2026-05-20 13:19"
       }
     },
     {
@@ -647,16 +647,6 @@
       "symbol": "02628.HK",
       "name": "中國人壽",
       "prices": [
-        {
-          "date": "2026-05-13",
-          "dateShort": "05/13",
-          "close": 29.96,
-          "open": 30.52,
-          "high": 30.74,
-          "low": 29.28,
-          "volume": 51947297,
-          "volumeM": 51.95
-        },
         {
           "date": "2026-05-14",
           "dateShort": "05/14",
@@ -696,21 +686,31 @@
           "low": 28.66,
           "volume": 76188604,
           "volumeM": 76.19
+        },
+        {
+          "date": "2026-05-20",
+          "dateShort": "05/20",
+          "close": 29.12,
+          "open": 29.4,
+          "high": 29.68,
+          "low": 28.4,
+          "volume": 95960760,
+          "volumeM": 95.96
         }
       ],
-      "fiveDayPct": -1.13,
-      "high5": 30.74,
-      "low5": 28.66,
-      "avgVolume": 62528314.6,
+      "fiveDayPct": -2.54,
+      "high5": 30.36,
+      "low5": 28.4,
+      "avgVolume": 71331007.2,
       "volTrend": "↑",
       "analysis": {
         "signal": "watch",
-        "summary": "中國人壽（02628）五日走勢震盪，累積變動-1.13%。成交量放大。技術信號：觀望。",
+        "summary": "中國人壽（02628）五日走勢震盪，累積變動-2.54%。成交量放大。技術信號：觀望。",
         "trend": "sideways",
         "volumeSignal": "volume surge",
-        "support": 29.23,
-        "resistance": 30.13,
-        "generatedAt": "2026-05-20 08:27"
+        "support": 28.97,
+        "resistance": 29.75,
+        "generatedAt": "2026-05-20 13:19"
       }
     },
     {
@@ -718,16 +718,6 @@
       "symbol": "03986.HK",
       "name": "兆易創新",
       "prices": [
-        {
-          "date": "2026-05-13",
-          "dateShort": "05/13",
-          "close": 548.0,
-          "open": 490.8,
-          "high": 550.0,
-          "low": 486.2,
-          "volume": 2572732,
-          "volumeM": 2.57
-        },
         {
           "date": "2026-05-14",
           "dateShort": "05/14",
@@ -767,23 +757,33 @@
           "low": 550.5,
           "volume": 2125021,
           "volumeM": 2.13
+        },
+        {
+          "date": "2026-05-20",
+          "dateShort": "05/20",
+          "close": 704.5,
+          "open": 600.0,
+          "high": 712.0,
+          "low": 600.0,
+          "volume": 4100107,
+          "volumeM": 4.1
         }
       ],
-      "fiveDayPct": 9.85,
-      "high5": 624.5,
-      "low5": 486.2,
-      "avgVolume": 2702616.0,
-      "volTrend": "↓",
+      "fiveDayPct": 34.32,
+      "high5": 712.0,
+      "low5": 500.0,
+      "avgVolume": 3008091.0,
+      "volTrend": "↑",
       "analysis": {
         "signal": "buy",
-        "summary": "兆易創新（03986）五日走勢上升，累積變動+9.85%。成交量穩定。技術信號：買入。",
+        "summary": "兆易創新（03986）五日走勢上升，累積變動+34.32%。成交量穩定。技術信號：買入。",
         "trend": "uptrend",
         "volumeSignal": "stable",
-        "support": 495.92,
-        "resistance": 612.01,
-        "generatedAt": "2026-05-20 08:27"
+        "support": 510.0,
+        "resistance": 697.76,
+        "generatedAt": "2026-05-20 13:19"
       }
     }
   ],
-  "aiSummary": "今日追蹤 11 檔熱門港股，五日整體平均下跌3.92%。表現最佳：兆易創新（03986）+9.85%，表現最弱：瀾起科技（06809）-15.45%。上漲 3 檔，下跌 8 檔。"
+  "aiSummary": "今日追蹤 11 檔熱門港股，五日整體平均上漲0.81%。表現最佳：兆易創新（03986）+34.32%，表現最弱：紫金礦業（02899）-12.09%。上漲 4 檔，下跌 7 檔。"
 }
